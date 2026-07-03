@@ -1,0 +1,5 @@
+{
+  "watch": ["server.js", "api/"],
+  "ignore": ["client-src/", "api/items/data/", "api/images/data/"],
+  "ext": "js,json"
+}

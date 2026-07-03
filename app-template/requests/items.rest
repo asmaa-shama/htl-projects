@@ -1,0 +1,14 @@
+### get all items
+GET https://localhost:8080/api/items
+
+### get single item
+GET https://localhost:8080/api/items/4ed72030-fb78-46a2-b1e5-ae00f1c300b7
+
+### create a new item
+POST https://localhost:8080/api/items
+Content-Type: application/json
+
+{"name": "item4"}
+
+### delete an item
+DELETE https://localhost:8080/api/items/4ed72030-fb78-46a2-b1e5-ae00f1c300b7

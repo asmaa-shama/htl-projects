@@ -1,0 +1,31 @@
+{
+  "name": "item-finder",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "kaa",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client:build": "npx vite build",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "nodemon server.js",
+    "dev:frontend": "npx vite"
+  },
+  "dependencies": {
+    "@lit-labs/router": "^0.1.3",
+    "bootstrap": "^5.3.7",
+    "bootstrap-icons": "^1.13.1",
+    "express": "^5.2.1",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "lit": "^3.3.1",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "vite": "^7.0.6"
+  }
+}

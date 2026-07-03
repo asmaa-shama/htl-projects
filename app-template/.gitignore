@@ -1,0 +1,16 @@
+_out
+plantuml-images
+node_modules
+client-dist/*
+!client-dist/.gitkeep
+
+api/images/data/*
+!api/images/data/.gitkeep
+
+certs/*
+!certs/.gitkeep
+
+api/items/data/*
+!api/items/data/4ed72030-fb78-46a2-b1e5-ae00f1c300b7.json
+!api/items/data/9b5dee62-3e7f-4339-a886-e1c70797ecbc.json
+!api/items/data/d74d8b51-7f5b-446b-a312-1bbfd5d29c42.json
