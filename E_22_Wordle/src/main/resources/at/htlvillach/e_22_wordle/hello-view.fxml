@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.htlvillach.e_22_wordle.HelloController">
+    <left>
+        <VBox prefHeight="400.0" prefWidth="181.0" BorderPane.alignment="CENTER">
+            <children>
+            <HBox prefHeight="20.0" prefWidth="178.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="71.0" text="Username: ">
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                  </Label>
+                      <Label fx:id="lbUsername" prefHeight="22.0" prefWidth="112.0" text="-">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="82.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="69.0" text="Highscore: ">
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbHighscore" prefHeight="22.0" prefWidth="109.0" text="-">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="18.0" prefWidth="178.0">
+               <children>
+                  <Label prefHeight="22.0" prefWidth="149.0" text="Totalpoints:">
+                     <font>
+                        <Font name="Dubai Medium" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbTotalPoints" prefHeight="22.0" prefWidth="190.0" text="-">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+                <HBox prefHeight="22.0" prefWidth="161.0">
+               <children>
+                  <ImageView fx:id="ivProfile" fitHeight="129.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+                </HBox>
+            <Button fx:id="btnStartNewGame" mnemonicParsing="false" onAction="#onBtnStartNewGame" prefHeight="24.0" prefWidth="195.0" style="-fx-background-color: #CF95CB;" text="new Game">
+               <font>
+                  <Font name="Candara Light" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnLogOut" mnemonicParsing="false" onAction="#onBtnLogOut" prefHeight="24.0" prefWidth="178.0" style="-fx-background-color: #CF95CB;" text="Log out">
+               <font>
+                  <Font name="Candara Light" size="12.0" />
+               </font>
+            </Button>
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </left>
+    <center>
+        <GridPane prefHeight="197.0" prefWidth="263.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0">
+</ColumnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0">
+</ColumnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0">
+</ColumnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0">
+</ColumnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0">
+</ColumnConstraints>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="tf5" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf4" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+
+                </TextField>
+                <TextField fx:id="tf3" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+
+                </TextField>
+                <TextField fx:id="tf2" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf1" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf7" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf6" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf8" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf9" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf10" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf11" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf12" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf13" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf14" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf15" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf16" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf17" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf18" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf19" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf20" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf21" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf22" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf23" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf24" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf25" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf26" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf27" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf28" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf29" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="tf30" alignment="TOP_CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="45.0" style="-fx-border-color: #d3d6da; -fx-background-radius: 0px; -fx-border-width: 4px; -fx-border-radius: 0px;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Quicksand Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="btnGuess" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onBtnGuess" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #EBBDE8;" text="GUESS" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Candara Light" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" />
+               </GridPane.margin></Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="50.0" right="50.0" top="20.0" />
+            </BorderPane.margin>
+        </GridPane>
+    </center>
+    <top>
+        <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #CF95CB;" BorderPane.alignment="CENTER">
+            <items>
+                <Label alignment="CENTER" prefHeight="42.0" prefWidth="566.0" text="WORDLE" textFill="WHITE">
+                    <font>
+                        <Font name="Jokerman" size="36.0" />
+                    </font>
+                </Label>
+            </items>
+        </ToolBar>
+    </top>
+</BorderPane>
