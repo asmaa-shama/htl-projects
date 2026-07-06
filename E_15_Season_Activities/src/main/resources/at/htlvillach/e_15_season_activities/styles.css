@@ -1,0 +1,7 @@
+#lvActivity .list-cell:even {
+    -fx-background-color: #f2e9fc; /* helllila */
+}
+
+#lvActivity .list-cell:odd {
+    -fx-background-color: #e5d2f9 ;
+}

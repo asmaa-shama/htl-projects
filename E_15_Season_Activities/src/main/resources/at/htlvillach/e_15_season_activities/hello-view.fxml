@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e8dcff;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.htlvillach.e_15_season_activities.HelloController">
+   <bottom>
+      <ButtonBar prefHeight="18.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="cbActivities" prefHeight="26.0" prefWidth="183.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Activity:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font></Label>
+            <Label text="Lastname:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font></Label>
+            <Label text="Firstname:">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font></Label>
+            <TextField fx:id="tfFirstname" GridPane.columnIndex="1" />
+            <TextField fx:id="tfLastname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+              <buttons>
+                <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onBtnSaveClicked" style="-fx-background-color: #8c3be3;" text="Save" textFill="#e8dcff" />
+                  <Button fx:id="btnCancle" mnemonicParsing="false" onAction="#onBtnCancleClicked" style="-fx-background-color: #8c3be3;" text="Cancle" textFill="#e8dcff" />
+              </buttons>
+            </ButtonBar>
+         </children>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <left>
+      <ListView fx:id="lvPersons" prefHeight="331.0" prefWidth="247.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onNewClicked" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#onDeleteClicked" text="Delete" />
+
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ListView>
+   </left>
+   <top>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #8c3be3;" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="btnEditActivities" mnemonicParsing="false" onAction="#onEditActivitiesClicked" style="-fx-background-color: #e8dcff;" text="Edit Activities" textFill="#8c3be3" />
+            <Label alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="473.0" text="ActivityPlanner" textFill="#e8dcff">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>
