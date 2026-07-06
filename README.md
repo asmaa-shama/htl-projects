@@ -23,7 +23,7 @@ Hier finden Sie die ausgewählten Projekte im Detail. Klicken Sie auf den jeweil
 * **Beschreibung:** Eine Desktop-Anwendung zur Verwaltung von Personen und deren saisonalen Aktivitäten. Setzt auf eine saubere MVVM-Architektur, bidirektionales JavaFX-Binding, ein Interface-basiertes Repository-Pattern und eine robuste JDBC-Datenbankanbindung.
 * **Ordner:** [/season-activities](/season-activities)
 
-### 4. 🔍 Item-Finder
+### 4. Item-Finder
 * **Technologien:** JavaScript, Lit (Web Components)
 * **Beschreibung:** Ein Frontend-Projekt basierend auf Lit-Webkomponenten, das ein schnelles Suchen, Filtern und Finden von bestimmten Gegenständen oder Datensätzen ermöglicht.
 * **Ordner:** [/item-finder](/item-finder)
