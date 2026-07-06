@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neues Set erstellen - VocabTrain</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+  <link href="./bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5" style="max-width: 700px;">
+    <div class="d-flex align-items-center gap-3 mb-4">
+      <a href="index.html" class="back-button">
+    ←
+      </a>
+      <h1 class="m-0 border-0 pb-0">Neues Set erstellen</h1>
+    </div>
+
+    <div class="card p-4 shadow-sm border-0 bg-white">
+      <div class="mb-4">
+        <label for="setTitle" class="form-label fw-bold text-secondary">Titel des Vokabelsets</label>
+        <input type="text" id="setTitle" class="form-control form-control-lg" placeholder="z. B. Englisch - Unit 1" required>
+      </div>
+
+<div class="mb-4 p-3 bg-light rounded border">
+  <label for="csvFileInput" class="form-label fw-bold text-secondary mb-1">
+    <i class="bi bi-filetype-csv"></i> Aus CSV-Datei importieren
+  </label>
+  <input type="file" id="csvFileInput" class="form-control" accept=".csv" onchange="importCSV(this)">
+</div>
+
+<hr class="my-4">
+<h5 class="fw-bold mb-3 text-success-emphasis">Vokabeln hinzufügen</h5>
+
+      <div id="vocabInputsContainer">
+        <div class="row g-2 mb-3 vocab-row">
+          <div class="col">
+            <input type="text" class="form-control word-input" placeholder="Wort / Begriff" required>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control translation-input" placeholder="Übersetzung" required>
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-outline-danger" onclick="removeRow(this)">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-outline-success w-100 mt-2" onclick="addVocabRow()">
+        <i class="bi bi-plus-lg"></i> Weitere Vokabel hinzufügen
+      </button>
+
+      <hr class="my-4">
+
+      <button type="button" id="btnSaveSet" class="btn btn-success w-100 py-2 fw-bold" onclick="saveNewSet()">
+        Set speichern
+      </button>
+    </div>
+  </div>
+
+  <script src="create-set.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Lernmodus - VocabTrain</title>
+</head>
+<body onload="loadVocab()">
+<div class="container mt-5">
+    <div id="vocabCarousel" class="carousel slide" data-bs-interval="false">
+        <div class="carousel-inner" id="vocabList"></div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#vocabCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Zurück</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#vocabCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Weiter</span>
+        </button>
+    </div>
+
+    <div class="d-flex justify-content-center gap-4 mt-4">
+        <button id="btnWrong" class="btn btn-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;" onclick="markVocab(false)">
+            <i class="bi bi-x-lg fs-4"></i>
+        </button>
+        <button id="btnRight" class="btn btn-success rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;" onclick="markVocab(true)">
+            <i class="bi bi-check-lg fs-4"></i>
+        </button>
+    </div>
+
+    <div class="text-center mt-3 text-muted fw-medium">
+        <span id="currentCardIndex">1</span> / <span id="totalCards">0</span>
+    </div>
+</div>
+    <script src="vocab.js"></script>
+</body>
+</html>

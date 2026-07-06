@@ -1,0 +1,5 @@
+### Get
+GET http://127.0.0.1:8080/recipes?category=Fleisch&vegetarian=false&sort=title_asc
+
+### Delete
+Delete http://127.0.0.1:8080/recipes/4
